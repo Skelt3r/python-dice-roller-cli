@@ -5,7 +5,9 @@
           /_______/ I C E
                         
              by Skelt3r
+             
 ---
+
 Run the main.py file to get started.
 
 Here's a breakdown of the syntax:
