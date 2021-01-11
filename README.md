@@ -11,7 +11,7 @@
 Run the main.py file to get started.
 
 Here's a breakdown of the syntax:
-- `> roll {number_of_dice}d{type_of_dice}{arithmetic_operator}{arithmetic_value}`
+- `> roll {number_of_dice}d{type_of_dice}{arithmetic_operator}{modifier_value}`
 
 ...and some examples:
 - `> roll 1d6`
