@@ -36,7 +36,7 @@ def roll_dice(num_sides, num_rolls):
         error()
 
 
-# Roll for a set of 5e ability scores
+# Roll for a set of ability scores
 def roll_stats():
     def stat_gen():
         rolls = sorted(roll_dice(6, 4))
