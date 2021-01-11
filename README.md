@@ -1,6 +1,3 @@
-# dice-roller-cmd
-A simple dice roller that runs in the command line.
----
 Run the main.py file to get started.
 
 Here's a breakdown of the syntax:
