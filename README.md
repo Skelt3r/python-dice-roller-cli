@@ -19,7 +19,7 @@ Here's a breakdown of the syntax:
 - `> roll 2d6-1`
 - `> roll 8d4+10`
 
-The program can also, roll a randomly generated set of 5e DND ability scores.
+The program can also roll a randomly generated set of 5e DND ability scores.
 
 Just use the `stats`command:
 - `> stats -> [17, 14, 13, 12, 10, 8]`
