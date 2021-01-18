@@ -3,7 +3,6 @@
 # Main program loop
 def main():
     start()
-    notes()
 
     while True:
         try:
@@ -83,7 +82,7 @@ def interpret(command):
             print(f'\n  Results: {rolls} + {mod}\n  Sum: {sum(rolls) + mod}\n')
 
 
-# Start screen
+# Start screen and opening notes
 def start():
     print(r'''
           ________ 
@@ -98,10 +97,7 @@ def start():
     ''')
 
     input()
-
-
-# Opening notes
-def notes():
+    
     print('  Type "help" to learn the syntax.\n'
           '  Type "quit" to close the program.\n')
 
