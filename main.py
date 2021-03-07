@@ -1,7 +1,5 @@
-# A simple command line dice roller
-
 # Main program loop
-def main():
+def init():
     start()
 
     while True:
@@ -122,4 +120,4 @@ def farewell():
 
 # Python go brrrrr
 if __name__ == "__main__":
-    main()
+    init()
