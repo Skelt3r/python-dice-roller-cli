@@ -95,6 +95,6 @@ class DiceRoller():
                       '  Type "quit" to close the program.\n')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     dice = DiceRoller()
     dice.run()
