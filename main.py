@@ -6,19 +6,16 @@ class DiceRoller():
         while True:
             try:
                 command = input('> ').lower().strip()
-
-                if command.startswith('roll'):
-                    self.interpret(command)
-                elif command == 'stats':
-                    self.roll_stats()
-                elif command == 'help':
-                    self.message('help')
-                elif command == 'quit':
-                    exit()
-                else:
-                    self.message('error')
-
-            except (IndexError, ValueError):
+                match command:
+                    case 'stats':
+                        self.roll_stats()
+                    case 'help':
+                        self.message('help')
+                    case 'quit' | 'exit':
+                        exit()
+                    case _:
+                        self.interpret(command)
+            except (EOFError, IndexError, ValueError):
                 self.message('error')
 
 
@@ -84,7 +81,7 @@ class DiceRoller():
     def message(self, type):
         match type:
             case 'error':
-                print('\n  Sorry, I didn\'t understand your input.'
+                print('\n  Invalid input.'
                       '\n  Please try again or use the "help" command to review the syntax.\n')
             case 'help':
                 print('\n  Use the "roll" command to roll any number/type of dice.\n'
@@ -95,6 +92,6 @@ class DiceRoller():
                       '  Type "quit" to close the program.\n')
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     dice = DiceRoller()
     dice.run()
